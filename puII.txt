@@ -25,7 +25,7 @@ if len(x) != 3 or x[0][-6:-4] != "PU" or validators.url(x[1]) == False or valida
 class2D = [
 	"https://meet.google.com/nqu-onem-oya",
 	"https://meet.google.com/tvp-qhfc-yvk",
-	"meet.google.com/vgm-ymnq-ukz",
+	"https://meet.google.com/vgm-ymnq-ukz",
 	"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
 ]
 
