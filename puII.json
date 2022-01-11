@@ -1,22 +1,20 @@
-[
-	[
-		"https://meet.google.com/nqu-onem-oya",
-		"https://meet.google.com/tvp-qhfc-yvk",
-		"meet.google.com/vgm-ymnq-ukz",
-		"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
-	]
+class2D = [
+	"https://meet.google.com/nqu-onem-oya",
+	"https://meet.google.com/tvp-qhfc-yvk",
+	"meet.google.com/vgm-ymnq-ukz",
+	"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
+]
 
-	[
-		"https://meet.google.com/nqu-onem-oya",
-		"https://meet.google.com/tvp-qhfc-yvk",
-		"https://zoom.us/j/92516506148?pwd=ZWlyaUlRcGZseVF6QkY5WGh6UCtPZz09",
-		"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
-	]
+class2E = [
+	"https://meet.google.com/nqu-onem-oya",
+	"https://meet.google.com/tvp-qhfc-yvk",
+	"https://zoom.us/j/92516506148?pwd=ZWlyaUlRcGZseVF6QkY5WGh6UCtPZz09",
+	"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
+]
 
-	[
-		"https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
-		"https://meet.google.com/tvp-qhfc-yvk",
-		"https://zoom.us/j/92516506148?pwd=ZWlyaUlRcGZseVF6QkY5WGh6UCtPZz09",
-		"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
-	]
+class2F = [
+	"https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
+	"https://meet.google.com/tvp-qhfc-yvk",
+	"https://zoom.us/j/92516506148?pwd=ZWlyaUlRcGZseVF6QkY5WGh6UCtPZz09",
+	"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
 ]
