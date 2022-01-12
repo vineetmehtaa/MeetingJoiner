@@ -23,10 +23,10 @@ if len(x) != 3 or x[0][-6:-4] != "PU" or validators.url(x[1]) == False or valida
 	exit()
 
 class2A = [
-	"",
-	"",
-	"",
-	""
+	"https://meet.google.com/nqu-onem-oya",
+	"https://us04web.zoom.us/j/4175690014?pwd=YTFjM1pqUnc1NjdnSG4yRTJ4WVptZz09",
+	"https://us02web.zoom.us/j/84667522081?pwd=Q2pFT1Q5ZEpEV0JPQW1JcTU3M1Fudz09",
+	"https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
 ]
 
 class2B = [
