@@ -72,7 +72,7 @@ Once your setup is complete on the first run, it is ready to use!
 
 All you need to do now is to _double-click_ the "Meeting Joiner.exe" when your classes are going on, and it will put you in the class!
 
-This code is currently compatible only for classes PUII - [D, E, F]
+This code is currently compatible only for classes PUII - [B, D, E, F]
 
 _For any queries, you can mail me at vineetashishm@cmr.ac.in_
 
