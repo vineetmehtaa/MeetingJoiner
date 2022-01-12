@@ -24,7 +24,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/screenshot.png" alt=screenshot>
+  </a>
 
 You can always join your classes by finding the timetable and then looking for the link corresponding to it, but why not do it with just one click? You may say it's not possible but it's right here!
 
