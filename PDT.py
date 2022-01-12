@@ -21,10 +21,12 @@ config = open("details.txt", "r")
 check = config.readlines()
 config.close()
 
+# checking if the file is empty
 if len(check) == 0:
 	setup()
 	exit()
 
+# checking if day isn't Saturday to get timeset
 if day != "Saturday":
 	if time > 12.40 or time < 8.10:
 		time_category = -1
@@ -47,6 +49,7 @@ if day != "Saturday":
 	elif time >= 11.50 and time < 12.40:
 		time_category = 5
 
+# Else finding Saturday's timeset
 else:
 	if time > 12.20 or time < 8.10:
 		time_category = -1
