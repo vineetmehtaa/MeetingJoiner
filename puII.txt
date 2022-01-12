@@ -22,6 +22,27 @@ f.close()
 if len(x) != 3 or x[0][-6:-4] != "PU" or validators.url(x[1]) == False or validators.url(x[2]) == False:
 	exit()
 
+class2A = [
+	"",
+	"",
+	"",
+	""
+]
+
+class2B = [
+	"https://meet.google.com/nqu-onem-oya",
+	"https://zoom.us/j/4175690014?pwd=YTFjM1pqUnc1NjdnSG4yRTJ4WVptZz09",
+	"https://zoom.us/j/84667522081?pwd=Q2pFT1Q5ZEpEV0JPQW1JcTU3M1Fudz09",
+	"https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
+]
+
+class2C = [
+	"",
+	"",
+	"",
+	""
+]
+
 class2D = [
 	"https://meet.google.com/nqu-onem-oya",
 	"https://meet.google.com/tvp-qhfc-yvk",
@@ -66,6 +87,33 @@ if section == "F":
 
 if x != []:
 	SUB1, SUB2, SUB3, SUB4, SUB5, SUB6 = sublist[0], sublist[1], sublist[2], sublist[3], sublist[4], sublist[5]
+
+ttpuII_A = {
+	"Monday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Tuesday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Wednesday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Thursday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Friday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Saturday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+}
+
+ttpuII_B = {
+	"Monday" 	: [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6]
+	"Tuesday" 	: [SUB6, SUB4, SUB5, "BREAK", SUB1, "BREAK"]
+	"Wednesday"	: [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4]
+	"Thursday"	: [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1]
+	"Friday" 	: [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5]
+	"Saturday"	: [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
+}
+
+ttpuII_C = {
+	"Monday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Tuesday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Wednesday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Thursday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Friday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Saturday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+}
 
 ttpuII_D = {
 	"Monday"	: [SUB4, SUB5, SUB1, "BREAK", SUB3, SUB6],
