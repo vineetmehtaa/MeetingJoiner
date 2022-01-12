@@ -6,6 +6,7 @@ from PDT   import *
 from pull  import *
 from setup import setup
 
+# function to clear screen
 def clear():
   
 	# For windows
@@ -16,6 +17,7 @@ def clear():
 	else:
 		clear = system('clear')
 
+# function to check and approve meeting launch
 def findLinkAndLaunch():
 	if time_category == -1 or day == "Sunday":
 		input("No Class Right Now!")
@@ -24,6 +26,7 @@ def findLinkAndLaunch():
 	else:
 		importTT()
 
+# function to import timetable contents
 def importTT():
 	f = open("details.txt", "r")
 	cl = ""
@@ -58,7 +61,7 @@ def importTT():
 			setup()
 			exit()
 
-    
+# function to launch meeting or inform break
 def launch_meeting(link):
 	if link == "BREAK":
 		input("You have a break right now! Come back later!")
