@@ -3,6 +3,7 @@ from sys import argv, exit
 import validators
 import string
 
+# function to clear screen
 def clear():
   
 	# For windows
@@ -12,12 +13,15 @@ def clear():
 	# For mac and linux(here, os.name is 'posix')
 	else:
 		clear = system('clear')
-
+		
+# function to instantiate setup for "details.txt"
 def setup():
+	# clearing "details.txt" incase any information is there that could cause tampering
 	f = open('details.txt', 'r+')
-	f.truncate(0) # need '0' when using r+
+	f.truncate(0)
 	f.close()
-
+	
+	# taking essential details
 	f = open("details.txt", "r")
 	if f.read() == "":
 		clear()
@@ -87,9 +91,12 @@ def setup():
 			exit()
 
 		clear()
-
+		
+		# taking input for optional subject link
 		print("\nMake sure you enter the link starting with http or https!")
 		optional = input("\nEnter the link for your optional subject [Biology / CS / Statistics]: ")
+		
+		# validating the optional subject link
 		if optional.startswith("http") == False and optional.startswith("HTTP") == False:
 			clear()
 			print("Invalid link entered! You will have to start over.")
@@ -101,9 +108,12 @@ def setup():
 				exit()
 
 		clear()
-
+		
+		# taking input for language subject link
 		print("\nMake sure you enter the link starting with http or https!")
 		language = input("\nEnter the link for your language subject [Hindi / Kannada / French]: ")
+		
+		# validating the optional subject link
 		if language.startswith("http") == False and language.startswith("HTTP") == False:
 			clear()
 			print("\nInvalid link entered! You will have to start over.")
@@ -115,6 +125,8 @@ def setup():
 				exit()
 
 		clear()
+		
+		# displaying details to the user to confirm their information
 		print("############### Profile Details ###############")
 		print("\nCombination : " + a+b)
 		print("Class       : " + c)
@@ -127,7 +139,8 @@ def setup():
 		if "yY".find(choice) == -1:
 			print("You are required to fill the details again!\nKindly relaunch the application!")
 			exit()
-
+		
+		# preparing information and writing it to "details.txt"
 		combination = (a + b + " " + c + " "+ d).upper()
 		file1 = open("details.txt", "w")
 		file1.write(combination + "\n" + optional + "\n" + language)
