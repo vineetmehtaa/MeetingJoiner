@@ -40,12 +40,11 @@ Here's why you should try this:
 _You can follow the steps given below to get your Meeting Joiner ready!_
 
 _Method 1:_
-1. Download the zip file
-2. Extract the zip file
-3. Navigate to _"MeetingJoiner-main"_
-4. Run "Meeting Joiner.exe"
+1. Download and extract the zip file
+2. Navigate to _"MeetingJoiner-main"_
+3. Run "Meeting Joiner.exe"
      _and your setup should start right away!_
-5. _[OPTIONAL] You can pin "Meeting Joiner.exe" to your Start Menu or Taskbar :smile:_
+4. _[OPTIONAL] You can pin "Meeting Joiner.exe" to your Start Menu or Taskbar :smile:_
   
 
 _Method 2:_
