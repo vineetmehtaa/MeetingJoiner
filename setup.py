@@ -59,7 +59,7 @@ def setup():
 					print("Sorry! Try Again!")
 					exit()
 				else:
-					if b == 1:
+					if b == "1":
 						b = "S"
 					else:
 						b = "C"
@@ -82,7 +82,7 @@ def setup():
 
 		clear()
 		d = input("\nWhich section are you in? ")
-		if "dDeEfFgG".find(d) == -1:
+		if "aAbBcCdDeEfF".find(d) == -1:
 			print("Sorry! Try Again!")
 			exit()
 
