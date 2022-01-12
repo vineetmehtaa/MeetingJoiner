@@ -8,10 +8,10 @@ SUB5 = ECO / CHE
 SUB6 = BST / MAT
 
 ClassFormat = [
-	ENG
-	ACC / PHY
-	ECO / CHE
-	BST / MAT
+        ENG
+        ACC / PHY
+        ECO / CHE
+        BST / MAT
 ]
 """
 
@@ -20,48 +20,48 @@ x = f.readlines()
 f.close()
 
 if len(x) != 3 or x[0][-6:-4] != "PU" or validators.url(x[1]) == False or validators.url(x[2]) == False:
-	exit()
+        exit()
 
 class2A = [
-	"https://meet.google.com/nqu-onem-oya",
-	"https://us04web.zoom.us/j/4175690014?pwd=YTFjM1pqUnc1NjdnSG4yRTJ4WVptZz09",
-	"https://us02web.zoom.us/j/84667522081?pwd=Q2pFT1Q5ZEpEV0JPQW1JcTU3M1Fudz09",
-	"https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
+        "https://meet.google.com/nqu-onem-oya",
+        "https://us04web.zoom.us/j/4175690014?pwd=YTFjM1pqUnc1NjdnSG4yRTJ4WVptZz09",
+        "https://us02web.zoom.us/j/84667522081?pwd=Q2pFT1Q5ZEpEV0JPQW1JcTU3M1Fudz09",
+        "https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
 ]
 
 class2B = [
-	"https://meet.google.com/nqu-onem-oya",
-	"https://zoom.us/j/4175690014?pwd=YTFjM1pqUnc1NjdnSG4yRTJ4WVptZz09",
-	"https://zoom.us/j/84667522081?pwd=Q2pFT1Q5ZEpEV0JPQW1JcTU3M1Fudz09",
-	"https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
+        "https://meet.google.com/nqu-onem-oya",
+        "https://zoom.us/j/4175690014?pwd=YTFjM1pqUnc1NjdnSG4yRTJ4WVptZz09",
+        "https://zoom.us/j/84667522081?pwd=Q2pFT1Q5ZEpEV0JPQW1JcTU3M1Fudz09",
+        "https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
 ]
 
 class2C = [
-	"",
-	"",
-	"",
-	""
+        "",
+        "",
+        "",
+        ""
 ]
 
 class2D = [
-	"https://meet.google.com/nqu-onem-oya",
-	"https://meet.google.com/tvp-qhfc-yvk",
-	"https://meet.google.com/vgm-ymnq-ukz",
-	"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
+        "https://meet.google.com/nqu-onem-oya",
+        "https://meet.google.com/tvp-qhfc-yvk",
+        "https://meet.google.com/vgm-ymnq-ukz",
+        "https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
 ]
 
 class2E = [
-	"https://meet.google.com/nqu-onem-oya",
-	"https://meet.google.com/tvp-qhfc-yvk",
-	"https://zoom.us/j/92516506148?pwd=ZWlyaUlRcGZseVF6QkY5WGh6UCtPZz09",
-	"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
+        "https://meet.google.com/nqu-onem-oya",
+        "https://meet.google.com/tvp-qhfc-yvk",
+        "https://zoom.us/j/92516506148?pwd=ZWlyaUlRcGZseVF6QkY5WGh6UCtPZz09",
+        "https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
 ]
 
 class2F = [
-	"https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
-	"https://meet.google.com/tvp-qhfc-yvk",
-	"https://zoom.us/j/92516506148?pwd=ZWlyaUlRcGZseVF6QkY5WGh6UCtPZz09",
-	"https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
+        "https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
+        "https://meet.google.com/tvp-qhfc-yvk",
+        "https://zoom.us/j/92516506148?pwd=ZWlyaUlRcGZseVF6QkY5WGh6UCtPZz09",
+        "https://zoom.us/j/92340729929?pwd=NS9aTUk3dm5YVVpMMm56WjdKT1pMQT09"
 ]
 
 # declaration and initialisation
@@ -73,71 +73,83 @@ sublist.append(x[1][:-1])
 sublist.append(x[2])
 section = (x[0][:-1])[-1].upper()
 
+if section == "A":
+        for i in class2A:
+                sublist.append(i)
+
+if section == "B":
+        for i in class2B:
+                sublist.append(i)
+
+if section == "C":
+        for i in class2C:
+                sublist.append(i)
+
 if section == "D":
-	for i in class2D:
-		sublist.append(i)
+        for i in class2D:
+                sublist.append(i)
 
 if section == "E":
-	for i in class2E:
-		sublist.append(i)
+        for i in class2E:
+                sublist.append(i)
 
 if section == "F":
-	for i in class2F:
-		sublist.append(i)
+        for i in class2F:
+                sublist.append(i)
 
 if x != []:
-	SUB1, SUB2, SUB3, SUB4, SUB5, SUB6 = sublist[0], sublist[1], sublist[2], sublist[3], sublist[4], sublist[5]
+        SUB1, SUB2, SUB3, SUB4, SUB5, SUB6 = sublist[0], sublist[1], sublist[2], sublist[3], sublist[4], sublist[5]
 
 ttpuII_A = {
-	"Monday" 	: [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
-	"Tuesday" 	: [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
-	"Wednesday"	: [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
-	"Thursday"	: [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
-	"Friday" 	: [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
-	"Saturday"	: [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
+        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
+        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
+        "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
+        "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
+        "Friday"        : [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
+        "Saturday"      : [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
 }
 
 ttpuII_B = {
-	"Monday" 	: [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
-	"Tuesday" 	: [SUB6, SUB4, SUB5, "BREAK", SUB1, "BREAK"],
-	"Wednesday"	: [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4],
-	"Thursday"	: [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1],
-	"Friday" 	: [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5],
-	"Saturday"	: [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
+        "Monday"        : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
+        "Tuesday"       : [SUB6, SUB4, SUB5, "BREAK", SUB1, "BREAK"],
+        "Wednesday"     : [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4],
+        "Thursday"      : [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1],
+        "Friday"        : [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5],
+        "Saturday"      : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
 }
 
 ttpuII_C = {
-	"Monday" 	: [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
-	"Tuesday" 	: [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
-	"Wednesday"	: [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
-	"Thursday"	: [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
-	"Friday" 	: [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
-	"Saturday"	: [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
+        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
+        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
+        "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
+        "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
+        "Friday"        : [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
+        "Saturday"      : [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
 }
 
 ttpuII_D = {
-	"Monday"	: [SUB4, SUB5, SUB1, "BREAK", SUB3, SUB6],
-	"Tuesday"	: [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB6],
-	"Wednesday"     : [SUB5, SUB6, SUB4, "BREAK", SUB1, SUB1],
-	"Thursday"	: [SUB1, SUB2, SUB6, "BREAK", SUB5, SUB4],
-	"Friday"	: [SUB3, SUB4, SUB2, "BREAK", SUB1, SUB5],
-	"Saturday"	: [SUB5, "BREAK", SUB1, "BREAK", SUB6, SUB4]
+        "Monday"        : [SUB4, SUB5, SUB1, "BREAK", SUB3, SUB6],
+        "Tuesday"       : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB6],
+        "Wednesday"     : [SUB5, SUB6, SUB4, "BREAK", SUB1, SUB1],
+        "Thursday"      : [SUB1, SUB2, SUB6, "BREAK", SUB5, SUB4],
+        "Friday"        : [SUB3, SUB4, SUB2, "BREAK", SUB1, SUB5],
+        "Saturday"      : [SUB5, "BREAK", SUB1, "BREAK", SUB6, SUB4]
 }
 
 ttpuII_E = {
-	"Monday"  	: [SUB1, SUB5, SUB4, "BREAK", SUB6, SUB3],
-	"Tuesday" 	: [SUB5, SUB1, SUB4, "BREAK", SUB1, SUB1],
-	"Wednesday"     : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
-	"Thursday" 	: [SUB2, SUB4, SUB5, "BREAK", SUB6, SUB1],
-	"Friday" 	: [SUB2, SUB6, SUB5, "BREAK", SUB4, SUB3],
-	"Saturday" 	: [SUB1, SUB4, "BREAK", "BREAK", SUB5, SUB6]
+        "Monday"        : [SUB1, SUB5, SUB4, "BREAK", SUB6, SUB3],
+        "Tuesday"       : [SUB5, SUB1, SUB4, "BREAK", SUB1, SUB1],
+        "Wednesday"     : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
+        "Thursday"      : [SUB2, SUB4, SUB5, "BREAK", SUB6, SUB1],
+        "Friday"        : [SUB2, SUB6, SUB5, "BREAK", SUB4, SUB3],
+        "Saturday"      : [SUB1, SUB4, "BREAK", "BREAK", SUB5, SUB6]
 }
 
 ttpuII_F = {
-	"Monday"	: [SUB1, SUB3, SUB6, "BREAK", SUB5, SUB4],
-	"Tuesday"	: [SUB4, SUB1, SUB5, "BREAK", SUB1, SUB1],
-	"Wednesday"     : [SUB6, SUB1, SUB3, "BREAK", SUB4, SUB5],
-	"Thursday"	: [SUB5, SUB6, SUB4, "BREAK", SUB2, SUB1],
-	"Friday"	: [SUB6, SUB2, SUB6, "BREAK", SUB5, SUB4],
-	"Saturday"	: [SUB1, SUB5, SUB6, "BREAK", SUB4, "BREAK"]
+        "Monday"        : [SUB1, SUB3, SUB6, "BREAK", SUB5, SUB4],
+        "Tuesday"       : [SUB4, SUB1, SUB5, "BREAK", SUB1, SUB1],
+        "Wednesday"     : [SUB6, SUB1, SUB3, "BREAK", SUB4, SUB5],
+        "Thursday"      : [SUB5, SUB6, SUB4, "BREAK", SUB2, SUB1],
+        "Friday"        : [SUB6, SUB2, SUB6, "BREAK", SUB5, SUB4],
+        "Saturday"      : [SUB1, SUB5, SUB6, "BREAK", SUB4, "BREAK"]
 }
