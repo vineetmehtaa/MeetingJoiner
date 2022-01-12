@@ -24,8 +24,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/vineetmehtaa/MeetingJoiner)
-
 You can always join your classes by finding the timetable and then looking for the link corresponding to it, but why not do it with just one click? You may say it's not possible but it's right here!
 
 Here's why you should try this:
