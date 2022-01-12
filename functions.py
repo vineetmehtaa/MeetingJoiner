@@ -3,7 +3,7 @@ import time
 from sys   import argv, exit
 from os    import system, name
 from PDT   import *
-from puII  import *
+from pull  import *
 from setup import setup
 
 def clear():
