@@ -89,30 +89,30 @@ if x != []:
 	SUB1, SUB2, SUB3, SUB4, SUB5, SUB6 = sublist[0], sublist[1], sublist[2], sublist[3], sublist[4], sublist[5]
 
 ttpuII_A = {
-	"Monday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Tuesday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Wednesday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Thursday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Friday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Saturday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Monday" 	: [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
+	"Tuesday" 	: [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
+	"Wednesday"	: [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
+	"Thursday"	: [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
+	"Friday" 	: [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
+	"Saturday"	: [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
 }
 
 ttpuII_B = {
-	"Monday" 	: [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6]
-	"Tuesday" 	: [SUB6, SUB4, SUB5, "BREAK", SUB1, "BREAK"]
-	"Wednesday"	: [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4]
-	"Thursday"	: [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1]
-	"Friday" 	: [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5]
+	"Monday" 	: [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
+	"Tuesday" 	: [SUB6, SUB4, SUB5, "BREAK", SUB1, "BREAK"],
+	"Wednesday"	: [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4],
+	"Thursday"	: [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1],
+	"Friday" 	: [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5],
 	"Saturday"	: [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
 }
 
 ttpuII_C = {
-	"Monday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Tuesday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Wednesday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Thursday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Friday" 	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
-	"Saturday"	: [SUB, SUB, SUB, "BREAK", SUB, SUB]
+	"Monday" 	: [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
+	"Tuesday" 	: [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
+	"Wednesday"	: [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
+	"Thursday"	: [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
+	"Friday" 	: [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
+	"Saturday"	: [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
 }
 
 ttpuII_D = {
