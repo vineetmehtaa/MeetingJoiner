@@ -33,7 +33,16 @@ def importTT():
 	f.close()
 	cl = cl[5:-1]
 
-	if cl == "PU2 D":
+	if cl == "PU2 A":
+		launch_meeting(ttpuII_A[day][time_category])
+
+	elif cl == "PU2 B":
+		launch_meeting(ttpuII_B[day][time_category])
+
+	elif cl == "PU2 C":
+		launch_meeting(ttpuII_C[day][time_category])
+
+	elif cl == "PU2 D":
 		launch_meeting(ttpuII_D[day][time_category])
 	
 	elif cl == "PU2 E":
