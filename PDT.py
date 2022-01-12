@@ -24,50 +24,46 @@ if len(check) == 0:
 	setup()
 	exit()
 
-if check[0].startswith("EAB"):
-	if day != "Saturday":
-		if time > 12.40 or time < 8.10:
-			time_category = -1
+if day != "Saturday":
+	if time > 12.40 or time < 8.10:
+		time_category = -1
 
-		elif time >= 8.10 and time < 9.10:
-			time_category = 0
+	elif time >= 8.10 and time < 9.10:
+		time_category = 0
 
-		elif time >= 9.10 and time < 10.00:
-			time_category = 1
+	elif time >= 9.10 and time < 10.00:
+		time_category = 1
 
-		elif time >= 10.00 and time < 10.50:
-			time_category = 2
+	elif time >= 10.00 and time < 10.50:
+		time_category = 2
 
-		elif time >= 10.50 and time < 11.00:
-			time_category = 3
+	elif time >= 10.50 and time < 11.00:
+		time_category = 3
 
-		elif time >= 11.00 and time < 11.50:
-			time_category = 4
+	elif time >= 11.00 and time < 11.50:
+		time_category = 4
 
-		elif time >= 11.50 and time < 12.40:
-			time_category = 5
-
-	else:
-		if time > 12.20 or time < 8.10:
-			time_category = -1
-
-		elif time >= 8.10 and time < 9.00:
-			time_category = 0
-
-		elif time >= 9.00 and time < 9.50:
-			time_category = 1
-
-		elif time >= 9.50 and time < 10.40:
-			time_category = 2
-
-		elif time >= 10.40 and time < 10.50:
-			time_category = 3
-
-		elif time >= 10.50 and time < 11.45:
-			time_category = 4
-
-		elif time >= 11.45 and time < 12.20:
-			time_category = 5
+	elif time >= 11.50 and time < 12.40:
+		time_category = 5
 
 else:
-	input("Not coded yet!")
+	if time > 12.20 or time < 8.10:
+		time_category = -1
+
+	elif time >= 8.10 and time < 9.00:
+		time_category = 0
+
+	elif time >= 9.00 and time < 9.50:
+		time_category = 1
+
+	elif time >= 9.50 and time < 10.40:
+		time_category = 2
+
+	elif time >= 10.40 and time < 10.50:
+		time_category = 3
+
+	elif time >= 10.50 and time < 11.45:
+		time_category = 4
+
+	elif time >= 11.45 and time < 12.20:
+		time_category = 5
