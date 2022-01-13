@@ -36,24 +36,26 @@ def importTT():
 	f.close()
 	cl = cl[5:-1]
 
+	# PU - I
 	if cl == "PU1 A":
-		launch_meeting(ttpuII_A[day][time_category])
+		launch_meeting(ttpuI_A[day][time_category])
 
 	elif cl == "PU1 B":
-		launch_meeting(ttpuII_B[day][time_category])
+		launch_meeting(ttpuI_B[day][time_category])
 
 	elif cl == "PU1 C":
-		launch_meeting(ttpuII_C[day][time_category])
+		launch_meeting(ttpuI_C[day][time_category])
 
 	elif cl == "PU1 D":
-		launch_meeting(ttpuII_D[day][time_category])
+		launch_meeting(ttpuI_D[day][time_category])
 	
 	elif cl == "PU1 E":
-		launch_meeting(ttpuII_E[day][time_category])
+		launch_meeting(ttpuI_E[day][time_category])
 
 	elif cl == "PU1 F":
-		launch_meeting(ttpuII_F[day][time_category])
+		launch_meeting(ttpuI_F[day][time_category])
 
+	# PU - II
 	elif cl == "PU2 A":
 		launch_meeting(ttpuII_A[day][time_category])
 
@@ -72,6 +74,7 @@ def importTT():
 	elif cl == "PU2 F":
 		launch_meeting(ttpuII_F[day][time_category])
 
+	# Incase there's an error, user is sent to setup if necessary
 	else:
 		print("Your details seem to be wrong, kindly enter [y] to setup the program again, else enter any other key: ")
 		ch = input()

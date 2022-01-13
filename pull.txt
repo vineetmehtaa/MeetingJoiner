@@ -1,3 +1,5 @@
+import validators
+
 """
 ##### Subjects #####
 SUB1 = OPTIONAL
@@ -29,35 +31,35 @@ class1A = [
         "https://meet.google.com/ncn-uazf-zyq"
 ]
 
-class1B = [
+class1B = [ # REMAINING
         "",
         "",
         "",
         ""
 ]
 
-class1C = [
+class1C = [ # REMAINING
         "",
         "",
         "",
         ""
 ]
 
-class1D = [
+class1D = [ # REMAINING
         "",
         "",
         "",
         ""
 ]
 
-class1E = [
+class1E = [ # REMAINING
         "",
         "",
         "",
         ""
 ]
 
-class1F = [
+class1F = [ # REMAINING
         "",
         "",
         "",
@@ -113,34 +115,113 @@ SUB1, SUB2, SUB3, SUB4, SUB5, SUB6 = "", "", "", "", "", ""
 # if x != [] and len(x) == 3:
 sublist.append(x[1][:-1])
 sublist.append(x[2])
-section = (x[0][:-1])[-1].upper()
+section = (x[0][:-1])[-3:].upper()
+input(section)
 
-if section == "A":
+if section == "1 A":
+        for i in class1A:
+                sublist.append(i)
+
+if section == "1 B":
+        for i in class1B:
+                sublist.append(i)
+
+if section == "1 C":
+        for i in class1C:
+                sublist.append(i)
+
+if section == "1 D":
+        for i in class1D:
+                sublist.append(i)
+
+if section == "1 E":
+        for i in class1E:
+                sublist.append(i)
+
+if section == "1 F":
+        for i in class1F:
+                sublist.append(i)
+
+if section == "2 A":
         for i in class2A:
                 sublist.append(i)
 
-if section == "B":
+if section == "2 B":
         for i in class2B:
                 sublist.append(i)
 
-if section == "C":
+if section == "2 C":
         for i in class2C:
                 sublist.append(i)
 
-if section == "D":
+if section == "2 D":
         for i in class2D:
                 sublist.append(i)
 
-if section == "E":
+if section == "2 E":
         for i in class2E:
                 sublist.append(i)
 
-if section == "F":
+if section == "2 F":
         for i in class2F:
                 sublist.append(i)
 
 if x != []:
         SUB1, SUB2, SUB3, SUB4, SUB5, SUB6 = sublist[0], sublist[1], sublist[2], sublist[3], sublist[4], sublist[5]
+
+ttpuI_A = { # REMAINING
+        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
+        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
+        "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
+        "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
+        "Friday"        : [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
+        "Saturday"      : [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
+}
+
+ttpuI_B = { # REMAINING
+        "Monday"        : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
+        "Tuesday"       : [SUB6, SUB4, SUB5, "BREAK", SUB1, "BREAK"],
+        "Wednesday"     : [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4],
+        "Thursday"      : [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1],
+        "Friday"        : [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5],
+        "Saturday"      : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
+}
+
+ttpuI_C = { # REMAINING
+        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
+        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
+        "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
+        "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
+        "Friday"        : [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
+        "Saturday"      : [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
+}
+
+ttpuI_D = { # REMAINING
+        "Monday"        : [SUB4, SUB5, SUB1, "BREAK", SUB3, SUB6],
+        "Tuesday"       : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB6],
+        "Wednesday"     : [SUB5, SUB6, SUB4, "BREAK", SUB1, SUB1],
+        "Thursday"      : [SUB1, SUB2, SUB6, "BREAK", SUB5, SUB4],
+        "Friday"        : [SUB3, SUB4, SUB2, "BREAK", SUB1, SUB5],
+        "Saturday"      : [SUB5, "BREAK", SUB1, "BREAK", SUB6, SUB4]
+}
+
+ttpuI_E = { # REMAINING
+        "Monday"        : [SUB1, SUB5, SUB4, "BREAK", SUB6, SUB3],
+        "Tuesday"       : [SUB5, SUB1, SUB4, "BREAK", SUB1, SUB1],
+        "Wednesday"     : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
+        "Thursday"      : [SUB2, SUB4, SUB5, "BREAK", SUB6, SUB1],
+        "Friday"        : [SUB2, SUB6, SUB5, "BREAK", SUB4, SUB3],
+        "Saturday"      : [SUB1, SUB4, "BREAK", "BREAK", SUB5, SUB6]
+}
+
+ttpuI_F = { # REMAINING
+        "Monday"        : [SUB1, SUB3, SUB6, "BREAK", SUB5, SUB4],
+        "Tuesday"       : [SUB4, SUB1, SUB5, "BREAK", SUB1, SUB1],
+        "Wednesday"     : [SUB6, SUB1, SUB3, "BREAK", SUB4, SUB5],
+        "Thursday"      : [SUB5, SUB6, SUB4, "BREAK", SUB2, SUB1],
+        "Friday"        : [SUB6, SUB2, SUB6, "BREAK", SUB5, SUB4],
+        "Saturday"      : [SUB1, SUB5, SUB6, "BREAK", SUB4, "BREAK"]
+}
 
 ttpuII_A = {
         "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
@@ -160,8 +241,7 @@ ttpuII_B = {
         "Saturday"      : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
 }
 
-# REMAINING
-ttpuII_C = {
+ttpuII_C = { # REMAINING
         "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
         "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
         "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
