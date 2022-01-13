@@ -169,13 +169,13 @@ if section == "2 F":
 if x != []:
         SUB1, SUB2, SUB3, SUB4, SUB5, SUB6 = sublist[0], sublist[1], sublist[2], sublist[3], sublist[4], sublist[5]
 
-ttpuI_A = { # REMAINING
-        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
-        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
-        "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
-        "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
-        "Friday"        : [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
-        "Saturday"      : [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
+ttpuI_A = {
+        "Monday"        : [SUB4, SUB6, "BREAK", SUB3, SUB5, SUB1],
+        "Tuesday"       : ["BREAK", "BREAK", "BREAK", SUB6, SUB4, SUB5],
+        "Wednesday"     : [SUB1, SUB6, "BREAK", SUB5, "BREAK", SUB4],
+        "Thursday"      : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB2],
+        "Friday"        : [SUB1, SUB6, "BREAK", SUB5, SUB2, SUB4],
+        "Saturday"      : [SUB6, SUB5, "BREAK", SUB1, SUB3, SUB4]
 }
 
 ttpuI_B = { # REMAINING
