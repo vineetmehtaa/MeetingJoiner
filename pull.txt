@@ -22,6 +22,48 @@ f.close()
 if len(x) != 3 or x[0][-6:-4] != "PU" or validators.url(x[1]) == False or validators.url(x[2]) == False:
         exit()
 
+class1A = [
+        "",
+        "",
+        "",
+        ""
+]
+
+class1B = [
+        "",
+        "",
+        "",
+        ""
+]
+
+class1C = [
+        "",
+        "",
+        "",
+        ""
+]
+
+class1D = [
+        "",
+        "",
+        "",
+        ""
+]
+
+class1E = [
+        "",
+        "",
+        "",
+        ""
+]
+
+class1F = [
+        "",
+        "",
+        "",
+        ""
+]
+
 class2A = [
         "https://meet.google.com/nqu-onem-oya",
         "https://us04web.zoom.us/j/4175690014?pwd=YTFjM1pqUnc1NjdnSG4yRTJ4WVptZz09",
