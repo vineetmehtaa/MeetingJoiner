@@ -116,7 +116,6 @@ SUB1, SUB2, SUB3, SUB4, SUB5, SUB6 = "", "", "", "", "", ""
 sublist.append(x[1][:-1])
 sublist.append(x[2])
 section = (x[0][:-1])[-3:].upper()
-input(section)
 
 if section == "1 A":
         for i in class1A:
