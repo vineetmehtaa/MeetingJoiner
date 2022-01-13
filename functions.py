@@ -38,41 +38,41 @@ def importTT():
 
 	# PU - I
 	if cl == "PU1 A":
-		launch_meeting(ttpuI_A[day][time_category])
+		launch_meeting(ttpuI_A[day][time_category], ttpuI_A)
 
 	elif cl == "PU1 B":
-		launch_meeting(ttpuI_B[day][time_category])
+		launch_meeting(ttpuI_B[day][time_category], ttpuI_B)
 
 	elif cl == "PU1 C":
-		launch_meeting(ttpuI_C[day][time_category])
+		launch_meeting(ttpuI_C[day][time_category], ttpuI_C)
 
 	elif cl == "PU1 D":
-		launch_meeting(ttpuI_D[day][time_category])
+		launch_meeting(ttpuI_D[day][time_category], ttpuI_D)
 	
 	elif cl == "PU1 E":
-		launch_meeting(ttpuI_E[day][time_category])
+		launch_meeting(ttpuI_E[day][time_category], ttpuI_E)
 
 	elif cl == "PU1 F":
-		launch_meeting(ttpuI_F[day][time_category])
+		launch_meeting(ttpuI_F[day][time_category], ttpuI_F)
 
 	# PU - II
 	elif cl == "PU2 A":
-		launch_meeting(ttpuII_A[day][time_category])
+		launch_meeting(ttpuII_A[day][time_category], ttpuII_A)
 
 	elif cl == "PU2 B":
-		launch_meeting(ttpuII_B[day][time_category])
+		launch_meeting(ttpuII_B[day][time_category], ttpuII_B)
 
 	elif cl == "PU2 C":
-		launch_meeting(ttpuII_C[day][time_category])
+		launch_meeting(ttpuII_C[day][time_category], ttpuII_C)
 
 	elif cl == "PU2 D":
-		launch_meeting(ttpuII_D[day][time_category])
+		launch_meeting(ttpuII_D[day][time_category], ttpuII_D)
 	
 	elif cl == "PU2 E":
-		launch_meeting(ttpuII_E[day][time_category])
+		launch_meeting(ttpuII_E[day][time_category], ttpuII_E)
 
 	elif cl == "PU2 F":
-		launch_meeting(ttpuII_F[day][time_category])
+		launch_meeting(ttpuII_F[day][time_category], ttpuII_F)
 
 	# Incase there's an error, user is sent to setup if necessary
 	else:
@@ -83,9 +83,10 @@ def importTT():
 			exit()
 
 # function to launch meeting or inform break
-def launch_meeting(link):
+def launch_meeting(link, ct):
 	if link == "BREAK":
 		input("You have a break right now! Come back later!")
 	else:
+		print(ct)
 		webbrowser.get().open(link)
 		input("Your meeting should have launched!")
