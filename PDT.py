@@ -122,6 +122,3 @@ else:
 
 		elif time >= 11.45 and time < 12.20:
 			time_category = 5
-
-day = "Monday"
-time_category = 2
