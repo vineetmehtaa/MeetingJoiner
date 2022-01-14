@@ -1,5 +1,6 @@
 from base64 import standard_b64encode
 import calendar
+import time
 import validators
 from datetime import date
 from datetime import datetime
@@ -12,7 +13,7 @@ now = datetime.now()
 # Getting date day and time
 date = date.today()
 day = calendar.day_name[date.weekday()]
-time = float(now.strftime("%H.%M"))
+t = float(now.strftime("%H.%M"))
 
 # Category of time(0-5 = 6[consider subscripts])
 time_category = -1
@@ -32,48 +33,48 @@ standard = check[0][5:8]
 if standard == "PU2":
 	# checking if day isn't Saturday to get timeset
 	if day != "Saturday":
-		if time > 12.40 or time < 8.10:
+		if t > 12.40 or t < 8.10:
 			time_category = -1
 
-		elif time >= 8.10 and time < 9.10:
+		elif t >= 8.10 and t < 9.10:
 			time_category = 0
 
-		elif time >= 9.10 and time < 10.00:
+		elif t >= 9.10 and t < 10.00:
 			time_category = 1
 
-		elif time >= 10.00 and time < 10.50:
+		elif t >= 10.00 and t < 10.50:
 			time_category = 2
 
-		elif time >= 10.50 and time < 11.00:
+		elif t >= 10.50 and t < 11.00:
 			time_category = 3
 
-		elif time >= 11.00 and time < 11.50:
+		elif t >= 11.00 and t < 11.50:
 			time_category = 4
 
-		elif time >= 11.50 and time < 12.40:
+		elif t >= 11.50 and t < 12.40:
 			time_category = 5
 
 	# Else finding Saturday's timeset
 	else:
-		if time > 12.20 or time < 8.10:
+		if t > 12.20 or t < 8.10:
 			time_category = -1
 
-		elif time >= 8.10 and time < 9.00:
+		elif t >= 8.10 and t < 9.00:
 			time_category = 0
 
-		elif time >= 9.00 and time < 9.50:
+		elif t >= 9.00 and t < 9.50:
 			time_category = 1
 
-		elif time >= 9.50 and time < 10.40:
+		elif t >= 9.50 and t < 10.40:
 			time_category = 2
 
-		elif time >= 10.40 and time < 10.50:
+		elif t >= 10.40 and t < 10.50:
 			time_category = 3
 
-		elif time >= 10.50 and time < 11.45:
+		elif t >= 10.50 and t < 11.45:
 			time_category = 4
 
-		elif time >= 11.45 and time < 12.20:
+		elif t >= 11.45 and t < 12.20:
 			time_category = 5
 
 else:
@@ -102,23 +103,23 @@ else:
 
 	# Else finding Saturday's timeset
 	else:
-		if time > 12.20 or time < 8.10:
+		if t > 12.20 or t < 8.10:
 			time_category = -1
 
-		elif time >= 8.10 and time < 9.00:
+		elif t >= 8.10 and t < 9.00:
 			time_category = 0
 
-		elif time >= 9.00 and time < 9.50:
+		elif t >= 9.00 and t < 9.50:
 			time_category = 1
 
-		elif time >= 9.50 and time < 10.00:
+		elif t >= 9.50 and t < 10.00:
 			time_category = 2
 
-		elif time >= 10.00 and time < 10.50:
+		elif t >= 10.00 and t < 10.50:
 			time_category = 3
 
-		elif time >= 10.50 and time < 11.45:
+		elif t >= 10.50 and t < 11.45:
 			time_category = 4
 
-		elif time >= 11.45 and time < 12.20:
+		elif t >= 11.45 and t < 12.20:
 			time_category = 5
