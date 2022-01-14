@@ -80,25 +80,25 @@ if standard == "PU2":
 else:
 	# checking if day isn't Saturday to get timeset
 	if day != "Saturday":
-		if time > 12.40 or time < 8.10:
+		if t > 12.40 or t < 8.10:
 			time_category = -1
 
-		elif time >= 8.10 and time < 9.10:
+		elif t >= 8.10 and t < 9.10:
 			time_category = 0
 
-		elif time >= 9.10 and time < 10.00:
+		elif t >= 9.10 and t < 10.00:
 			time_category = 1
 
-		elif time >= 10.00 and time < 10.10:
+		elif t >= 10.00 and t < 10.10:
 			time_category = 2
 
-		elif time >= 10.10 and time < 11.00:
+		elif t >= 10.10 and t < 11.00:
 			time_category = 3
 
-		elif time >= 11.00 and time < 11.50:
+		elif t >= 11.00 and t < 11.50:
 			time_category = 4
 
-		elif time >= 11.50 and time < 12.40:
+		elif t >= 11.50 and t < 12.40:
 			time_category = 5
 
 	# Else finding Saturday's timeset
