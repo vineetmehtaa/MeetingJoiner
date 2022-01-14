@@ -164,8 +164,8 @@ if x != []:
 
 ttpuI_A = {
         "Monday"        : [SUB4, SUB6, "BREAK", SUB3, SUB5, SUB1],
-        "Tuesday"       : ["BREAK", "BREAK", "BREAK", SUB6, SUB4, SUB5],
-        "Wednesday"     : [SUB1, SUB6, "BREAK", SUB5, "BREAK", SUB4],
+        "Tuesday"       : ["LAB", "LAB", "BREAK", SUB6, SUB4, SUB5],
+        "Wednesday"     : [SUB1, SUB6, "BREAK", SUB5, "PT", SUB4],
         "Thursday"      : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB2],
         "Friday"        : [SUB1, SUB6, "BREAK", SUB5, SUB2, SUB4],
         "Saturday"      : [SUB6, SUB5, "BREAK", SUB1, SUB3, SUB4]
@@ -183,9 +183,9 @@ ttpuI_B = { # REMAINING
 ttpuI_C = {
         "Monday"        : [SUB6, SUB5, "BREAK", SUB1, SUB4, SUB4],
         "Tuesday"       : [SUB1, SUB3, "BREAK", SUB5, SUB6, SUB4],
-        "Wednesday"     : [SUB6, "BREAK", "BREAK", SUB1, SUB4, SUB5],
+        "Wednesday"     : [SUB6, "PT", "BREAK", SUB1, SUB4, SUB5],
         "Thursday"      : [SUB1, SUB5, "BREAK", SUB6, SUB4, SUB2],
-        "Friday"        : ["BREAK", "BREAK", "BREAK", SUB6, SUB2, SUB5],
+        "Friday"        : ["LAB", "LAB", "BREAK", SUB6, SUB2, SUB5],
         "Saturday"      : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB3]
 }
 
@@ -195,20 +195,20 @@ ttpuI_D = {
         "Wednesday"     : [SUB4, SUB5, "BREAK", SUB4, SUB1, SUB6],
         "Thursday"      : [SUB6, SUB1, "BREAK", SUB4, SUB5, SUB2],
         "Friday"        : [SUB6, SUB1, "BREAK", SUB1, SUB2, SUB5],
-        "Saturday"      : [SUB5, SUB4, "BREAK", SUB6, "BREAK", SUB1]
+        "Saturday"      : [SUB5, SUB4, "BREAK", SUB6, "PT", SUB1]
 }
 
 ttpuI_E = {
         "Monday"        : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB4],
         "Tuesday"       : [SUB1, SUB5, "BREAK", SUB6, SUB4, SUB3],
-        "Wednesday"     : [SUB6, SUB4, "BREAK", "BREAK", SUB1, SUB5],
+        "Wednesday"     : [SUB6, SUB4, "BREAK", "PT", SUB1, SUB5],
         "Thursday"      : [SUB5, SUB1, "BREAK", SUB2, SUB6, SUB4],
         "Friday"        : [SUB6, SUB1, "BREAK", SUB1, SUB5, SUB2],
         "Saturday"      : [SUB4, SUB5, "BREAK", SUB3, SUB6, SUB1]
 }
 
 ttpuII_A = {
-        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
+        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "PT"],
         "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
         "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
         "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
@@ -218,7 +218,7 @@ ttpuII_A = {
 
 ttpuII_B = {
         "Monday"        : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
-        "Tuesday"       : [SUB6, SUB4, SUB5, "BREAK", SUB1, "BREAK"],
+        "Tuesday"       : [SUB6, SUB4, SUB5, "BREAK", SUB1, "PT"],
         "Wednesday"     : [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4],
         "Thursday"      : [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1],
         "Friday"        : [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5],
@@ -240,7 +240,7 @@ ttpuII_D = {
         "Wednesday"     : [SUB5, SUB6, SUB4, "BREAK", SUB1, SUB1],
         "Thursday"      : [SUB1, SUB2, SUB6, "BREAK", SUB5, SUB4],
         "Friday"        : [SUB3, SUB4, SUB2, "BREAK", SUB1, SUB5],
-        "Saturday"      : [SUB5, "BREAK", SUB1, "BREAK", SUB6, SUB4]
+        "Saturday"      : [SUB5, "PT", SUB1, "BREAK", SUB6, SUB4]
 }
 
 ttpuII_E = {
@@ -249,7 +249,7 @@ ttpuII_E = {
         "Wednesday"     : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
         "Thursday"      : [SUB2, SUB4, SUB5, "BREAK", SUB6, SUB1],
         "Friday"        : [SUB2, SUB6, SUB5, "BREAK", SUB4, SUB3],
-        "Saturday"      : [SUB1, SUB4, "BREAK", "BREAK", SUB5, SUB6]
+        "Saturday"      : [SUB1, SUB4, "PT", "BREAK", SUB5, SUB6]
 }
 
 ttpuII_F = {
@@ -258,5 +258,5 @@ ttpuII_F = {
         "Wednesday"     : [SUB6, SUB1, SUB3, "BREAK", SUB4, SUB5],
         "Thursday"      : [SUB5, SUB6, SUB4, "BREAK", SUB2, SUB1],
         "Friday"        : [SUB6, SUB2, SUB6, "BREAK", SUB5, SUB4],
-        "Saturday"      : [SUB1, SUB5, SUB6, "BREAK", SUB4, "BREAK"]
+        "Saturday"      : [SUB1, SUB5, SUB6, "BREAK", SUB4, "PT"]
 }
