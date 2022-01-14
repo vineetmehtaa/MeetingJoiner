@@ -183,7 +183,7 @@ ttpuI_B = { # REMAINING
 ttpuI_C = {
         "Monday"        : [SUB6, SUB5, "BREAK", SUB1, SUB4, SUB4],
         "Tuesday"       : [SUB1, SUB3, "BREAK", SUB5, SUB6, SUB4],
-        "Wednesday"     : [SUB6, "PT", "BREAK", SUB1, SUB4, SUB5, "LAB"],
+        "Wednesday"     : [SUB6, "PT", "BREAK", SUB1, SUB4, SUB5],
         "Thursday"      : [SUB1, SUB5, "BREAK", SUB6, SUB4, SUB2],
         "Friday"        : ["LAB", "LAB", "BREAK", SUB6, SUB2, SUB5],
         "Saturday"      : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB3]
