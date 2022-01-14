@@ -15,6 +15,11 @@ ClassFormat = [
         ECO / CHE
         BST / MAT
 ]
+
+ttpuX_Y = {
+        Timetable according to the
+            above assignments
+}
 """
 
 f = open("details.txt", "r")
@@ -25,7 +30,7 @@ if len(x) != 3 or x[0][-6:-4] != "PU" or validators.url(x[1]) == False or valida
         exit()
 
 class1A = [
-        "https://www.google.com", #REMAINING
+        "https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
         "https://meet.google.com/zaa-ekpb-pyi",
         "https://meet.google.com/ync-ecuk-pwd",
         "https://meet.google.com/ncn-uazf-zyq"
@@ -38,28 +43,21 @@ class1B = [ # REMAINING
         ""
 ]
 
-class1C = [ # REMAINING
-        "",
-        "",
-        "",
-        ""
+class1C = [
+        "https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
+        "https://meet.google.com/zaa-ekpb-pyi",
+        "https://meet.google.com/ync-ecuk-pwd",
+        "https://meet.google.com/ncn-uazf-zyq"
 ]
 
-class1D = [ # REMAINING
-        "",
-        "",
-        "",
-        ""
+class1D = [
+        "https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
+        "https://meet.google.com/voz-dhsy-ses",
+        "https://zoom.us/j/96614158188?pwd=N3VWNlpKNHVnWjZJOE5paVdlUEdDdz09",
+        "https://meet.google.com/voz-dhsy-ses"
 ]
 
 class1E = [ # REMAINING
-        "",
-        "",
-        "",
-        ""
-]
-
-class1F = [ # REMAINING
         "",
         "",
         "",
@@ -80,7 +78,7 @@ class2B = [
         "https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
 ]
 
-class2C = [
+class2C = [ # REMAINING
         "",
         "",
         "",
@@ -137,10 +135,6 @@ if section == "1 E":
         for i in class1E:
                 sublist.append(i)
 
-if section == "1 F":
-        for i in class1F:
-                sublist.append(i)
-
 if section == "2 A":
         for i in class2A:
                 sublist.append(i)
@@ -178,48 +172,39 @@ ttpuI_A = {
 }
 
 ttpuI_B = { # REMAINING
-        "Monday"        : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
-        "Tuesday"       : [SUB6, SUB4, SUB5, "BREAK", SUB1, "BREAK"],
-        "Wednesday"     : [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4],
-        "Thursday"      : [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1],
-        "Friday"        : [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5],
-        "Saturday"      : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
+        "Monday"        : [SUB6, SUB5, "BREAK", SUB1, SUB4, SUB4],
+        "Tuesday"       : [SUB1, SUB3, "BREAK", SUB5, SUB6, SUB4],
+        "Wednesday"     : [SUB6, "BREAK", "BREAK", SUB1, SUB4, SUB5],
+        "Thursday"      : [SUB1, SUB5, "BREAK", SUB6, SUB4, SUB2],
+        "Friday"        : ["BREAK", "BREAK", "BREAK", SUB6, SUB2, SUB5],
+        "Saturday"      : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB3]
 }
 
-ttpuI_C = { # REMAINING
-        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
-        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
-        "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
-        "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
-        "Friday"        : [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
-        "Saturday"      : [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
+ttpuI_C = {
+        "Monday"        : [SUB6, SUB5, "BREAK", SUB1, SUB4, SUB4],
+        "Tuesday"       : [SUB1, SUB3, "BREAK", SUB5, SUB6, SUB4],
+        "Wednesday"     : [SUB6, "BREAK", "BREAK", SUB1, SUB4, SUB5],
+        "Thursday"      : [SUB1, SUB5, "BREAK", SUB6, SUB4, SUB2],
+        "Friday"        : ["BREAK", "BREAK", "BREAK", SUB6, SUB2, SUB5],
+        "Saturday"      : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB3]
 }
 
-ttpuI_D = { # REMAINING
-        "Monday"        : [SUB4, SUB5, SUB1, "BREAK", SUB3, SUB6],
-        "Tuesday"       : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB6],
-        "Wednesday"     : [SUB5, SUB6, SUB4, "BREAK", SUB1, SUB1],
-        "Thursday"      : [SUB1, SUB2, SUB6, "BREAK", SUB5, SUB4],
-        "Friday"        : [SUB3, SUB4, SUB2, "BREAK", SUB1, SUB5],
-        "Saturday"      : [SUB5, "BREAK", SUB1, "BREAK", SUB6, SUB4]
+ttpuI_D = {
+        "Monday"        : [SUB5, SUB4, "BREAK", SUB1, SUB6, SUB3],
+        "Tuesday"       : [SUB1, SUB6, "BREAK", SUB3, SUB5, SUB4],
+        "Wednesday"     : [SUB4, SUB5, "BREAK", SUB4, SUB1, SUB6],
+        "Thursday"      : [SUB6, SUB1, "BREAK", SUB4, SUB5, SUB2],
+        "Friday"        : [SUB6, SUB1, "BREAK", SUB1, SUB2, SUB5],
+        "Saturday"      : [SUB5, SUB4, "BREAK", SUB6, "BREAK", SUB1]
 }
 
-ttpuI_E = { # REMAINING
-        "Monday"        : [SUB1, SUB5, SUB4, "BREAK", SUB6, SUB3],
-        "Tuesday"       : [SUB5, SUB1, SUB4, "BREAK", SUB1, SUB1],
-        "Wednesday"     : [SUB4, SUB1, SUB5, "BREAK", SUB6, SUB6],
-        "Thursday"      : [SUB2, SUB4, SUB5, "BREAK", SUB6, SUB1],
-        "Friday"        : [SUB2, SUB6, SUB5, "BREAK", SUB4, SUB3],
-        "Saturday"      : [SUB1, SUB4, "BREAK", "BREAK", SUB5, SUB6]
-}
-
-ttpuI_F = { # REMAINING
-        "Monday"        : [SUB1, SUB3, SUB6, "BREAK", SUB5, SUB4],
-        "Tuesday"       : [SUB4, SUB1, SUB5, "BREAK", SUB1, SUB1],
-        "Wednesday"     : [SUB6, SUB1, SUB3, "BREAK", SUB4, SUB5],
-        "Thursday"      : [SUB5, SUB6, SUB4, "BREAK", SUB2, SUB1],
-        "Friday"        : [SUB6, SUB2, SUB6, "BREAK", SUB5, SUB4],
-        "Saturday"      : [SUB1, SUB5, SUB6, "BREAK", SUB4, "BREAK"]
+ttpuI_E = {
+        "Monday"        : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB4],
+        "Tuesday"       : [SUB1, SUB5, "BREAK", SUB6, SUB4, SUB3],
+        "Wednesday"     : [SUB6, SUB4, "BREAK", "BREAK", SUB1, SUB5],
+        "Thursday"      : [SUB5, SUB1, "BREAK", SUB2, SUB6, SUB4],
+        "Friday"        : [SUB6, SUB1, "BREAK", SUB1, SUB5, SUB2],
+        "Saturday"      : [SUB4, SUB5, "BREAK", SUB3, SUB6, SUB1]
 }
 
 ttpuII_A = {
