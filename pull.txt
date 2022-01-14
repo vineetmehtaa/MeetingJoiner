@@ -57,11 +57,11 @@ class1D = [
         "https://meet.google.com/voz-dhsy-ses"
 ]
 
-class1E = [ # REMAINING
-        "",
-        "",
-        "",
-        ""
+class1E = [
+        "https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
+        "https://meet.google.com/voz-dhsy-ses",
+        "https://meet.google.com/vgm-ymnq-ukz",
+        "https://www.google.com/" # N/A
 ]
 
 class2A = [
