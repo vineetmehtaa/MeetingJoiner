@@ -22,8 +22,8 @@ def findLinkAndLaunch():
 	if time_category == -1 or day == "Sunday":
 		clear()
 		print("No class right now!")
-		print("Time : " + str(t).replace(".", ":"))
-		print("Day  : " + day)
+		input("Time of execution: " + time.ctime())
+		
 		exit()
 
 	else:
@@ -183,8 +183,8 @@ def print_timetable(ct, section, status):
 	if status == "C":
 		print("      SUB  - " + sublist[time_category])
 		print("------------------------")
-		for i in range(0,5):
-			print("    LAUNCHING IN " + str(5-i) + "s", end="\r")
+		for i in range(1,10):
+			print("    LAUNCHING IN " + str(10-i) + "s", end="\r")
 			time.sleep(1)
 		print("    MEETING LAUNCHED")
 		print("------------------------")
