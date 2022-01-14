@@ -100,6 +100,9 @@ else:
 
 		elif t >= 11.50 and t < 12.40:
 			time_category = 5
+		
+		elif t >= 13.00 and t < 14.50:
+			time_category = 6
 
 	# Else finding Saturday's timeset
 	else:

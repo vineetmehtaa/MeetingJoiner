@@ -55,9 +55,6 @@ def importTT():
 	elif cl == "PU1 E":
 		launch_meeting(ttpuI_E[day][time_category], ttpuI_E, cl[-1])
 
-	elif cl == "PU1 F":
-		launch_meeting(ttpuI_F[day][time_category], ttpuI_F, cl[-1])
-
 	# PU - II
 	elif cl == "PU2 A":
 		launch_meeting(ttpuII_A[day][time_category], ttpuII_A, cl[-1])
@@ -89,6 +86,12 @@ def importTT():
 def launch_meeting(link, ct, section):
 	if link == "BREAK":
 		print_timetable(ct, section, "B")
+	
+	elif link == "PT":
+		print_timetable(ct, section, "P")
+	
+	elif link == "LAB":
+		print_timetable(ct, section, "L")
 
 	else:
 		print_timetable(ct, section, "C")
@@ -97,51 +100,68 @@ def launch_meeting(link, ct, section):
 # function to print timetable
 def print_timetable(ct, section, status):
 	sub_called = ""
+	todays_schedule = []
 
 	for i in ct:
-		count = 0
+		if i != day:
+			continue
+
 		for j in ct[i]:
 			if "ABC".find(section) != -1:
 				if j == SUB1:
-					ct[i][count] = ("OPT")
+					todays_schedule.append("OPT")
 				
 				elif j == SUB2:
-					ct[i][count] = ("LANG")
+					todays_schedule.append("LANG")
 				
 				elif j == SUB3:
-					ct[i][count] = ("ENG")
+					todays_schedule.append("ENG")
 
 				elif j == SUB4:
-					ct[i][count] = ("PHY")
+					todays_schedule.append("PHY")
 
 				elif j == SUB5:
-					ct[i][count] = ("CHE")
+					todays_schedule.append("CHE")
 
 				elif j == SUB6:
-					ct[i][count] = ("MATH")
+					todays_schedule.append("MATH")
 
-				count += 1
+				elif j == "BREAK":
+					todays_schedule.append("BREAK")
+				
+				elif j == "LAB":
+					todays_schedule.append("LAB")
+
+				else:
+					todays_schedule.append("PT")
 			
 			else:
 				if j == SUB1:
-					ct[i][count] = ("OPT")
+					todays_schedule.append("OPT")
 				
 				elif j == SUB2:
-					ct[i][count] = ("LANG")
+					todays_schedule.append("LANG")
 				
 				elif j == SUB3:
-					ct[i][count] = ("ENG")
+					todays_schedule.append("ENG")
 
 				elif j == SUB4:
-					ct[i][count] = ("ACC")
+					if section != "D":
+						todays_schedule.append("ACC")
+					else:
+						todays_schedule.append("AC/BS")
 
 				elif j == SUB5:
-					ct[i][count] = ("ECO")
+					todays_schedule.append("ECO")
 
 				elif j == SUB6:
-					ct[i][count] = ("BST")
-
-				count += 1
+					todays_schedule.append("BST")
+				
+				elif j == "BREAK":
+					todays_schedule.append("BREAK")
+				
+				else:
+					todays_schedule.append("PT")
 
 	clear()
 	f = open("details.txt", "r")
@@ -153,7 +173,13 @@ def print_timetable(ct, section, status):
 	print("    TODAY'S SCHEDULE")
 	print("------------------------")
 	print("       " + cbl[0][:-1])
-	print("         " + day.upper())
+
+	if day == "Wednesday" or day == "Thursday":
+		print("        " + day.upper())
+
+	else:
+		print("         " + day.upper())
+
 	print("------------------------")
 	time_list = []
 
@@ -173,15 +199,21 @@ def print_timetable(ct, section, status):
 		time_list.append("11:00 - 11:50 ---> ")
 		time_list.append("11:50 - 12:40 ---> ")
 
-	sublist = []
-	for i in range(0, 6):
-		print(time_list[i] + ct[day][i])
-		sublist.append(ct[day][i])
+	runt = 6
+	if len(ct[day]) == 7:
+		time_list.append(" 1:00 -  2:50 ---> ")
+		runt = 7
 
+	sublist = []
+	for i in range(0, runt):
+		print(time_list[i] + todays_schedule[i])
+		sublist.append(ct[day][i])
+	
 	print("------------------------")
 	print("      TIME - " + str(now.strftime("%H:%M")))
+
 	if status == "C":
-		print("      SUB  - " + sublist[time_category])
+		print("      SUB  - " + todays_schedule[i])
 		print("------------------------")
 		for i in range(1,10):
 			print("    LAUNCHING IN " + str(10-i) + "s", end="\r")
@@ -189,8 +221,21 @@ def print_timetable(ct, section, status):
 		print("    MEETING LAUNCHED")
 		print("------------------------")
 
+	elif status == "P":
+		print("       SUB - PT")
+		print("------------------------")
+		print("     YOU HAVE PT NOW")
+		print("------------------------")
+
+	elif status == "L":
+		print("       SUB - LAB")
+		print("------------------------")
+		print("  KINDLY USE YOUR OWN")
+		print(" LINK FOR CORE SUB LAB")
+		print("------------------------")
+
 	else:
-		print("      SUB  - BREAK")
+		print("       SUB - BREAK")
 		print("------------------------")
 		print("    YOU HAVE A BREAK")
 		print("------------------------")
