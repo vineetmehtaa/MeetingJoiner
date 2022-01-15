@@ -41,38 +41,38 @@ def importTT():
 
 	# PU - I
 	if cl == "PU1 A":
-		launch_meeting(ttpuI_A[day][time_category], ttpuI_A, cl[-1])
+		launch_meeting(ttpuI_A[day][time_category], ttpuI_A, cl[-1], cl)
 
 	elif cl == "PU1 B":
-		launch_meeting(ttpuI_B[day][time_category], ttpuI_B, cl[-1])
+		launch_meeting(ttpuI_B[day][time_category], ttpuI_B, cl[-1], cl)
 
 	elif cl == "PU1 C":
-		launch_meeting(ttpuI_C[day][time_category], ttpuI_C, cl[-1])
+		launch_meeting(ttpuI_C[day][time_category], ttpuI_C, cl[-1], cl)
 
 	elif cl == "PU1 D":
-		launch_meeting(ttpuI_D[day][time_category], ttpuI_D, cl[-1])
+		launch_meeting(ttpuI_D[day][time_category], ttpuI_D, cl[-1], cl)
 	
 	elif cl == "PU1 E":
-		launch_meeting(ttpuI_E[day][time_category], ttpuI_E, cl[-1])
+		launch_meeting(ttpuI_E[day][time_category], ttpuI_E, cl[-1], cl)
 
 	# PU - II
 	elif cl == "PU2 A":
-		launch_meeting(ttpuII_A[day][time_category], ttpuII_A, cl[-1])
+		launch_meeting(ttpuII_A[day][time_category], ttpuII_A, cl[-1], cl)
 
 	elif cl == "PU2 B":
-		launch_meeting(ttpuII_B[day][time_category], ttpuII_B, cl[-1])
+		launch_meeting(ttpuII_B[day][time_category], ttpuII_B, cl[-1], cl)
 
 	elif cl == "PU2 C":
-		launch_meeting(ttpuII_C[day][time_category], ttpuII_C, cl[-1])
+		launch_meeting(ttpuII_C[day][time_category], ttpuII_C, cl[-1], cl)
 
 	elif cl == "PU2 D":
-		launch_meeting(ttpuII_D[day][time_category], ttpuII_D, cl[-1])
+		launch_meeting(ttpuII_D[day][time_category], ttpuII_D, cl[-1], cl)
 	
 	elif cl == "PU2 E":
-		launch_meeting(ttpuII_E[day][time_category], ttpuII_E, cl[-1])
+		launch_meeting(ttpuII_E[day][time_category], ttpuII_E, cl[-1], cl)
 
 	elif cl == "PU2 F":
-		launch_meeting(ttpuII_F[day][time_category], ttpuII_F, cl[-1])
+		launch_meeting(ttpuII_F[day][time_category], ttpuII_F, cl[-1], cl)
 
 	# Incase there's an error, user is sent to setup if necessary
 	else:
@@ -83,22 +83,22 @@ def importTT():
 			exit()
 
 # function to launch meeting or inform break
-def launch_meeting(link, ct, section):
+def launch_meeting(link, ct, section, cl):
 	if link == "BREAK":
-		print_timetable(ct, section, "B")
+		print_timetable(ct, section, "B", cl)
 	
 	elif link == "PT":
-		print_timetable(ct, section, "P")
+		print_timetable(ct, section, "P", cl)
 	
 	elif link == "LAB":
-		print_timetable(ct, section, "L")
+		print_timetable(ct, section, "L", cl)
 
 	else:
-		print_timetable(ct, section, "C")
+		print_timetable(ct, section, "C", cl)
 		webbrowser.get().open(link)
 
 # function to print timetable
-def print_timetable(ct, section, status):
+def print_timetable(ct, section, status, cl):
 	sub_called = ""
 	todays_schedule = []
 
@@ -146,7 +146,7 @@ def print_timetable(ct, section, status):
 					todays_schedule.append("ENG")
 
 				elif j == SUB4:
-					if section != "D":
+					if cl != "PU1 D":
 						todays_schedule.append("ACC")
 					else:
 						todays_schedule.append("AC/BS")
@@ -174,7 +174,7 @@ def print_timetable(ct, section, status):
 	print("------------------------")
 	print("       " + cbl[0][:-1])
 
-	if day == "Wednesday" or day == "Thursday":
+	if day == "Wednesday" or day == "Thursday" or day == "Saturday":
 		print("        " + day.upper())
 
 	else:
@@ -184,20 +184,30 @@ def print_timetable(ct, section, status):
 	time_list = []
 
 	if combination == "PU1":
-		time_list.append(" 8:10 -  9:10 ---> ")
-		time_list.append(" 9:10 - 10:00 ---> ")
-		time_list.append("10:00 - 10:10 ---> ")
-		time_list.append("10:10 - 11:00 ---> ")
-		time_list.append("11:00 - 11:50 ---> ")
-		time_list.append("11:50 - 12:40 ---> ")
+		if day != "Saturday":
+			time_list.append(" 8:10 -  9:10 ---> ")
+			time_list.append(" 9:10 - 10:00 ---> ")
+			time_list.append("10:00 - 10:10 ---> ")
+			time_list.append("10:10 - 11:00 ---> ")
+			time_list.append("11:00 - 11:50 ---> ")
+			time_list.append("11:50 - 12:40 ---> ")
 	
 	else:
-		time_list.append(" 8:10 -  9:10 ---> ")
-		time_list.append(" 9:10 - 10:00 ---> ")
-		time_list.append("10:00 - 10:50 ---> ")
-		time_list.append("10:50 - 11:00 ---> ")
-		time_list.append("11:00 - 11:50 ---> ")
-		time_list.append("11:50 - 12:40 ---> ")
+		if day != "Saturday":
+			time_list.append(" 8:10 -  9:10 ---> ")
+			time_list.append(" 9:10 - 10:00 ---> ")
+			time_list.append("10:00 - 10:50 ---> ")
+			time_list.append("10:50 - 11:00 ---> ")
+			time_list.append("11:00 - 11:50 ---> ")
+			time_list.append("11:50 - 12:40 ---> ")
+
+		else:
+			time_list.append(" 8:10 -  9:00 ---> ")
+			time_list.append(" 9:00 -  9:50 ---> ")
+			time_list.append(" 9:50 - 10:40 ---> ")
+			time_list.append("10:40 - 10:50 ---> ")
+			time_list.append("10:50 - 11:45 ---> ")
+			time_list.append("11:45 - 12:20 ---> ")
 
 	runt = 6
 	if len(ct[day]) == 7:
@@ -224,7 +234,7 @@ def print_timetable(ct, section, status):
 	elif status == "P":
 		print("       SUB - PT")
 		print("------------------------")
-		print("     YOU HAVE PT NOW")
+		print("    YOU HAVE PT NOW")
 		print("------------------------")
 
 	elif status == "L":
