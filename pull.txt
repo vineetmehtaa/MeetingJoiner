@@ -164,7 +164,7 @@ if x != []:
 
 ttpuI_A = {
         "Monday"        : [SUB4, SUB6, "BREAK", SUB3, SUB5, SUB1],
-        "Tuesday"       : ["LAB", "LAB", "BREAK", SUB6, SUB4, SUB5],
+        "Tuesday"       : ["LAB", "LAB", "BREAK", SUB6, SUB4, SUB5, SUB1],
         "Wednesday"     : [SUB1, SUB6, "BREAK", SUB5, "PT", SUB4],
         "Thursday"      : [SUB4, SUB6, "BREAK", SUB1, SUB5, SUB2],
         "Friday"        : [SUB1, SUB6, "BREAK", SUB5, SUB2, SUB4],
@@ -174,7 +174,7 @@ ttpuI_A = {
 ttpuI_B = {
         "Monday"        : [SUB5, SUB4,   "BREAK", SUB1, SUB3, SUB5],
         "Tuesday"       : [SUB1, SUB6,   "BREAK", SUB4, SUB5, SUB6],
-        "Wednesday"     : ["LAB", "LAB", "BREAK", SUB1, SUB5, SUB6, "LAB"],
+        "Wednesday"     : ["LAB", "LAB", "BREAK", SUB1, SUB5, SUB6, SUB1],
         "Thursday"      : [SUB1, SUB4,   "BREAK", SUB2, SUB6, SUB5],
         "Friday"        : [SUB6, "PT",   "BREAK", SUB4, SUB4, SUB2],
         "Saturday"      : [SUB3, SUB4,   "BREAK", SUB1, SUB6, SUB5]
@@ -209,7 +209,7 @@ ttpuI_E = {
 
 ttpuII_A = {
         "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "PT"],
-        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
+        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3, "LAB"],
         "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
         "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
         "Friday"        : [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
@@ -221,14 +221,14 @@ ttpuII_B = {
         "Tuesday"       : [SUB6, SUB4, SUB5, "BREAK", SUB1, "PT"],
         "Wednesday"     : [SUB1, SUB1, SUB5, "BREAK", SUB1, SUB4],
         "Thursday"      : [SUB4, SUB5, SUB6, "BREAK", SUB2, SUB1],
-        "Friday"        : [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5],
+        "Friday"        : [SUB6, SUB2, SUB3, "BREAK", SUB4, SUB5, "LAB"],
         "Saturday"      : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
 }
 
 ttpuII_C = {
         "Monday"        : [SUB6, SUB1, SUB3, "BREAK", SUB5, SUB4],
         "Tuesday"       : [SUB4, SUB5, "PT", "BREAK", SUB1, SUB6],
-        "Wednesday"     : [SUB6, SUB6, SUB4, "BREAK", SUB1, SUB5],
+        "Wednesday"     : [SUB6, SUB6, SUB4, "BREAK", SUB1, SUB5, "LAB"],
         "Thursday"      : [SUB5, SUB2, SUB4, "BREAK", SUB6, SUB1],
         "Friday"        : [SUB5, SUB4, SUB2, "BREAK", SUB1, SUB1],
         "Saturday"      : [SUB1, SUB6, SUB4, "BREAK", SUB3, SUB5]
