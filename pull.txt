@@ -78,11 +78,11 @@ class2B = [
         "https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
 ]
 
-class2C = [ # REMAINING
-        "",
-        "",
-        "",
-        ""
+class2C = [
+        "https://meet.google.com/nqu-onem-oya",
+        "https://us04web.zoom.us/j/4175690014?pwd=YTFjM1pqUnc1NjdnSG4yRTJ4WVptZz09",
+        "https://us02web.zoom.us/j/84667522081?pwd=Q2pFT1Q5ZEpEV0JPQW1JcTU3M1Fudz09",
+        "https://zoom.us/j/92533002735?pwd=WHBGSzFFRVJiRFIyOTlJRmp4WTBMdz09"
 ]
 
 class2D = [
@@ -225,13 +225,13 @@ ttpuII_B = {
         "Saturday"      : [SUB1, SUB4, SUB5, "BREAK", SUB6, SUB3]
 }
 
-ttpuII_C = { # REMAINING
-        "Monday"        : [SUB5, SUB4, SUB6, "BREAK", SUB1, "BREAK"],
-        "Tuesday"       : [SUB5, SUB1, SUB1, "BREAK", SUB4, SUB3],
-        "Wednesday"     : [SUB4, SUB5, SUB6, "BREAK", SUB6, SUB1],
-        "Thursday"      : [SUB6, SUB1, SUB5, "BREAK", SUB2, SUB4],
-        "Friday"        : [SUB1, SUB2, SUB4, "BREAK", SUB5, SUB6],
-        "Saturday"      : [SUB5, SUB3, SUB6, "BREAK", SUB1, SUB4]
+ttpuII_C = {
+        "Monday"        : [SUB6, SUB1, SUB3, "BREAK", SUB5, SUB4],
+        "Tuesday"       : [SUB4, SUB5, "PT", "BREAK", SUB1, SUB6],
+        "Wednesday"     : [SUB6, SUB6, SUB4, "BREAK", SUB1, SUB5],
+        "Thursday"      : [SUB5, SUB2, SUB4, "BREAK", SUB6, SUB1],
+        "Friday"        : [SUB5, SUB4, SUB2, "BREAK", SUB1, SUB1],
+        "Saturday"      : [SUB1, SUB6, SUB4, "BREAK", SUB3, SUB5]
 }
 
 ttpuII_D = {
