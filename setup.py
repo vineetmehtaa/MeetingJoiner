@@ -24,17 +24,22 @@ def setup():
 	# taking essential details
 	f = open("details.txt", "r")
 	if f.read() == "":
+
+		# input for stream
 		clear()
 		print("Hey! Welcome to the setup!\n")
 		print("What is your Stream?")
 		print("\n1. Science")
 		print("2. Commerce\n")
 		a = input("Enter the number [1 / 2]: ")
+
+		# validating input
 		if a != "1" and a != "2":
 			print("Sorry! Try Again!")
 			exit()
 
 		else:
+			# input for optional subject in Science Stream
 			clear()
 			if a == "1":
 				a = "PCM"
@@ -43,6 +48,7 @@ def setup():
 				print("2. Computer Science\n")
 				b = input("Enter the number [1 / 2]: ")
 				
+				# validating input
 				if b != "1" and b != "2":
 					print("Sorry! Try Again!")
 					exit()
@@ -54,26 +60,32 @@ def setup():
 						b = "C"
 
 			else:
+				# input for optional subject in Commerce Stream
 				a = "EAB"
 				print("\nEnter your optional subject: ")
 				print("\n1. Statistics")
 				print("2. Computer Science\n")
 				b = input("Enter the number [1 / 2]: ")
+
+				# validating input
 				if b != "1" and b != "2":
 					print("Sorry! Try Again!")
 					exit()
+
 				else:
 					if b == "1":
 						b = "S"
 					else:
 						b = "C"
 
+		# input for grade
 		clear()
 		print("\nWhat is your grade?")
 		print("\n1. PU - I")
 		print("2. PU - II\n")
 		c = input("Enter the number [1 / 2]: ")
 
+		# validating input
 		if c != "1" and c!= "2":
 			print("Sorry! Try Again!")
 			exit()
@@ -84,15 +96,15 @@ def setup():
 			else:
 				c = "PU2"
 
+		# input for student section
 		clear()
 		d = input("\nWhich section are you in? ")
 		if "aAbBcCdDeEfF".find(d) == -1:
 			print("Sorry! Try Again!")
 			exit()
 
-		clear()
-		
 		# taking input for optional subject link
+		clear()
 		print("\nMake sure you enter the link starting with http or https!")
 		optional = input("\nEnter the link for your optional subject [Biology / CS / Statistics]: ")
 		
@@ -106,10 +118,9 @@ def setup():
 				clear()
 				print("Invalid link entered! You will have to start over.")
 				exit()
-
-		clear()
 		
 		# taking input for language subject link
+		clear()
 		print("\nMake sure you enter the link starting with http or https!")
 		language = input("\nEnter the link for your language subject [Hindi / Kannada / French]: ")
 		
@@ -123,10 +134,9 @@ def setup():
 				clear()
 				print("\nInvalid link entered! You will have to start over.")
 				exit()
-
-		clear()
 		
 		# displaying details to the user to confirm their information
+		clear()
 		print("############### Profile Details ###############")
 		print("\nCombination : " + a+b)
 		print("Class       : " + c)

@@ -99,14 +99,18 @@ def launch_meeting(link, ct, section, cl):
 
 # function to print timetable
 def print_timetable(ct, section, status, cl):
+	# creating items to store subject called and today's timetable list
 	sub_called = ""
 	todays_schedule = []
 
+	# iterating to compute days called
 	for i in ct:
 		if i != day:
 			continue
-
+		
+		# iterating through again to determine subjects and differentiate Science And Commerce
 		for j in ct[i]:
+			# For sections A | B | C i.e. Science Classes
 			if "ABC".find(section) != -1:
 				if j == SUB1:
 					todays_schedule.append("OPT")
@@ -135,6 +139,7 @@ def print_timetable(ct, section, status, cl):
 				else:
 					todays_schedule.append("PT")
 			
+			# for sections D | E | F i.e. Commerce Classes
 			else:
 				if j == SUB1:
 					todays_schedule.append("OPT")
@@ -146,6 +151,7 @@ def print_timetable(ct, section, status, cl):
 					todays_schedule.append("ENG")
 
 				elif j == SUB4:
+					# PU 1 D has the same link for ACC and BST hence we can't differentiate it, so it is marked as "AC/BS"
 					if cl != "PU1 D":
 						todays_schedule.append("ACC")
 					else:
@@ -163,17 +169,20 @@ def print_timetable(ct, section, status, cl):
 				else:
 					todays_schedule.append("PT")
 
+	# extracting grade to determine class timings
 	clear()
 	f = open("details.txt", "r")
 	cbl = f.readlines()
 	combination = cbl[0][5:8]
 	f.close()
 
+	# printing out today's scheduled classes
 	print("\n------------------------")
 	print("    TODAY'S SCHEDULE")
 	print("------------------------")
 	print("       " + cbl[0][:-1])
 
+	# used for aligning
 	if day == "Wednesday" or day == "Thursday" or day == "Saturday":
 		print("        " + day.upper())
 
@@ -183,6 +192,7 @@ def print_timetable(ct, section, status, cl):
 	print("------------------------")
 	time_list = []
 
+	# appending PU1 timings
 	if combination == "PU1":
 		if day != "Saturday":
 			time_list.append(" 8:10 -  9:10 ---> ")
@@ -191,7 +201,17 @@ def print_timetable(ct, section, status, cl):
 			time_list.append("10:10 - 11:00 ---> ")
 			time_list.append("11:00 - 11:50 ---> ")
 			time_list.append("11:50 - 12:40 ---> ")
+		
+		# saturday
+		else:
+			time_list.append(" 8:10 -  9:00 ---> ")
+			time_list.append(" 9:00 -  9:50 ---> ")
+			time_list.append(" 9:50 - 10:00 ---> ")
+			time_list.append("10:00 - 10:50 ---> ")
+			time_list.append("10:50 - 11:45 ---> ")
+			time_list.append("11:45 - 12:20 ---> ")
 	
+	# appending PU2 timings
 	else:
 		if day != "Saturday":
 			time_list.append(" 8:10 -  9:10 ---> ")
@@ -201,6 +221,7 @@ def print_timetable(ct, section, status, cl):
 			time_list.append("11:00 - 11:50 ---> ")
 			time_list.append("11:50 - 12:40 ---> ")
 
+		# saturday
 		else:
 			time_list.append(" 8:10 -  9:00 ---> ")
 			time_list.append(" 9:00 -  9:50 ---> ")
@@ -209,11 +230,15 @@ def print_timetable(ct, section, status, cl):
 			time_list.append("10:50 - 11:45 ---> ")
 			time_list.append("11:45 - 12:20 ---> ")
 
+	# runt is default 6 for majority of schedule in a day inc. break
 	runt = 6
+	
+	# checking for 7 inorder to determine class after 12:40 PM
 	if len(ct[day]) == 7:
 		time_list.append(" 1:00 -  2:50 ---> ")
 		runt = 7
 
+	# printing out the schedule
 	sublist = []
 	for i in range(0, runt):
 		print(time_list[i] + todays_schedule[i])
@@ -222,8 +247,9 @@ def print_timetable(ct, section, status, cl):
 	print("------------------------")
 	print("      TIME - " + str(now.strftime("%H:%M")))
 
+	# status approved for a class being held
 	if status == "C":
-		print("      SUB  - " + todays_schedule[i])
+		print("      SUB  - " + todays_schedule[time_category])
 		print("------------------------")
 		for i in range(1,10):
 			print("    LAUNCHING IN " + str(10-i) + "s", end="\r")
@@ -231,21 +257,39 @@ def print_timetable(ct, section, status, cl):
 		print("    MEETING LAUNCHED")
 		print("------------------------")
 
+	# status approved for PT
 	elif status == "P":
 		print("       SUB - PT")
 		print("------------------------")
 		print("    YOU HAVE PT NOW")
-		print("------------------------")
+		input("------------------------")
 
+	# status approved for science labs
 	elif status == "L":
 		print("       SUB - LAB")
 		print("------------------------")
-		print("  KINDLY USE YOUR OWN")
-		print(" LINK FOR CORE SUB LAB")
+		print("    WHICH LAB TODAY?")
+		print("    1. Physics")
+		print("    2. Chemistry")
 		print("------------------------")
+		lab_c = input("   Enter the number:")
+		print("------------------------")
+		if lab_c == "1":
+			webbrowser.get().open(SUB4)
+			exit()
 
+		elif lab_c == "2":
+			webbrowser.get().open(SUB5)
+			exit()
+
+		else:
+			print("     Invalid Choice!")
+			input("------------------------")
+			exit()
+
+	# status else as a break
 	else:
 		print("       SUB - BREAK")
 		print("------------------------")
 		print("    YOU HAVE A BREAK")
-		print("------------------------")
+		input("------------------------")
