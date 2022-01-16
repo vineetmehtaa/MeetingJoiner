@@ -48,7 +48,7 @@ _You can follow the steps given below to get your Meeting Joiner ready!_
 _Method 1:[ Windows 8 | 10 | 11 ]_
 
 <p align="left">
-1. Download the zip file by clicking on the green "Code" button ---> "Download ZIP".
+:one:  Download the zip file by clicking on the green "Code" button ---> "Download ZIP".
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
     <img src="images/download_zip.png" alt="Download" style="width:600px;">
@@ -58,7 +58,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 <br />
 
 <p align="left">
-  2. Open file explorer and locate "MeetingJoiner-main.zip"
+  :two:  Open file explorer and locate "MeetingJoiner-main.zip"
   <div>
     <a href="https://github.com/vineetmehtaa/MeetingJoiner">
       <img src="images/1.PNG" alt="MeetingJoiner-main" style="width:600px;">
@@ -68,7 +68,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 <br />
                                                       
 <p align="left">
-3. Right click on "MeetingJoiner-main.zip" and then click "Extract all"
+:three:  Right click on "MeetingJoiner-main.zip" and then click "Extract all"
 <div>
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
     <img src="images/2.PNG" alt="Right click options" style="width:600px;">
@@ -81,7 +81,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 <br />
                                                     
 <p align="left">                                                 
-4. You will find the extracted folder!
+:four:  You will find the extracted folder!
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
     <img src="images/4.png" alt="Extracted folder found" style="width:600px;">
@@ -91,7 +91,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 <br />
                                                         
 <p align="left">
-5. Open the folder and find all the files
+:five:  Open the folder and find all the files
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
     <img src="images/5.png" alt="Listing files" style="width:600px;">
@@ -101,7 +101,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 <br />
                                                
 <p align="left">
-6. Run "Meeting Joiner", your antivirus might think this is a dangerous file to run. Click on "More info"
+:six:  Run "Meeting Joiner", your antivirus might think this is a dangerous file to run. Click on "More info"
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
     <img src="images/6.png" alt="More info" style="width:600px;">
@@ -110,7 +110,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 <br />
                                            
 <p align="left">
-7. After clicking on "More info", click on "Run anyway"!
+:seven:  After clicking on "More info", click on "Run anyway"!
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
     <img src="images/7.png" alt="Run anyway" style="width:600px;">
@@ -120,7 +120,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 <br />  
                                             
 <p align="left">
-8. On your first run, the setup window for your details should open up as such:
+:eight:  On your first run, the setup window for your details should open up as such:	:diamond_shape_with_a_dot_inside:
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
     <img src="images/8.png" alt="Setup Details" style="width:600px;">
@@ -128,20 +128,22 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 </div>
 </p>
 <br />
-                                               
+
+<p align:"left">
+:nine:  _[OPTIONAL] You can pin "Meeting Joiner.exe" to your Start Menu or Taskbar :smile:_
+</p>
+
 _Method 2:_
-1. Clone the repo or download the zip(You will need python3)
+:one: Clone the repo or download the zip(You will need python3)
    ```sh
    git clone https://github.com/vineetmehtaa/MeetingJoiner.git
    ```
-2. Open CMD and run
+:two: Open CMD and run
    ```sh
-   cd /PATH/TO/MeetingJoiner/
+   cd Path/To/MeetingJoiner
    python3 main.py
    ```
    _Your setup should start right away!_
-   
-3. _[OPTIONAL] You can pin "Meeting Joiner.exe" to your Start Menu or Taskbar :smile:_
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
