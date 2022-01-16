@@ -51,7 +51,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 1. Download the zip file by clicking on the green "Code" button ---> "Download ZIP".
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-    <img src="images/download_zip.png" alt="Download">
+    <img src="images/download_zip.png" alt="Download" style="width:600px;">
   </a>
 </div>
 </p>
@@ -61,7 +61,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
   2. Open file explorer and locate "MeetingJoiner-main.zip"
   <div>
     <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-      <img src="images/1.PNG" alt="MeetingJoiner-main">
+      <img src="images/1.PNG" alt="MeetingJoiner-main" style="width:600px;">
     </a>
   </div>
 </p>
@@ -71,10 +71,10 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 3. Right click on "MeetingJoiner-main.zip" and then click "Extract all"
 <div>
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-    <img src="images/2.PNG" alt="Right click options">
+    <img src="images/2.PNG" alt="Right click options" style="width:600px;">
   </a>
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-    <img src="images/3.png" alt="Extract all prompt">
+    <img src="images/3.png" alt="Extract all prompt" style="width:600px;">
   </a>
 </div>
 </p>
@@ -84,7 +84,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 4. You will find the extracted folder!
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-    <img src="images/4.png" alt="Extracted folder found">
+    <img src="images/4.png" alt="Extracted folder found" style="width:600px;">
   </a>
 </div>
 </p>
@@ -94,7 +94,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 5. Open the folder and find all the files
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-    <img src="images/5.png" alt="Listing files">
+    <img src="images/5.png" alt="Listing files" style="width:600px;">
   </a>
 </div> 
 </p>
@@ -104,7 +104,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 6. Run "Meeting Joiner", your antivirus might think this is a dangerous file to run. Click on "More info"
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-    <img src="images/6.png" alt="More info">
+    <img src="images/6.png" alt="More info" style="width:600px;">
   </a>
 </p>
 <br />
@@ -113,7 +113,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 7. After clicking on "More info", click on "Run anyway"!
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-    <img src="images/7.png" alt="Run anyway">
+    <img src="images/7.png" alt="Run anyway" style="width:600px;">
   </a>
 </div>
 </p>
@@ -123,7 +123,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 8. On your first run, the setup window for your details should open up as such:
 <div align="left">
   <a href="https://github.com/vineetmehtaa/MeetingJoiner">
-    <img src="images/8.png" alt="Setup Details">
+    <img src="images/8.png" alt="Setup Details" style="width:600px;">
   </a>
 </div>
 </p>
