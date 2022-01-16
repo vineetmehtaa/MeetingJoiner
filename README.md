@@ -42,22 +42,82 @@ Here's why you should try this:
 _You can follow the steps given below to get your Meeting Joiner ready!_
 
 _Method 1:_
-1. Download and extract the zip file
-2. Navigate to _"MeetingJoiner-main"_
-3. Run "Meeting Joiner.exe"
-     _and your setup should start right away!_
-4. _[OPTIONAL] You can pin "Meeting Joiner.exe" to your Start Menu or Taskbar :smile:_
-  
+1. Download the zip file by clicking on the green "Code" button ---> "Download ZIP".
 
+<div align="left">
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/download_zip.png" alt="Download">
+  </a>
+</div>
+
+  
+2. Open file explorer and locate "MeetingJoiner-main.zip"
+<div align="left">
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/1.PNG" alt="MeetingJoiner-main">
+  </a>
+</div>
+  
+  
+3. Right click on "MeetingJoiner-main.zip" and then click "Extract all"
+<div align="left">
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/2.PNG" alt="Right click options">
+  </a>
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/3.png" alt="Extract all prompt">
+  </a>
+</div>
+  
+  
+4. You will find the extracted folder!
+<div align="left">
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/4.png" alt="Extracted folder found">
+  </a>
+</div>
+
+  
+5. Open the folder and find all the files
+<div align="left">
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/5.png" alt="Listing files">
+  </a>
+</div>
+
+  
+6. Run "Meeting Joiner", your antivirus might think this is a dangerous file to run. Click on "More info"
+<div align="left">
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/6.png" alt="More info">
+  </a>
+
+  
+7. After clicking on "More info", click on "Run anyway"!
+<div align="left">
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/7.png" alt="Run anyway">
+  </a>
+</div>
+  
+  
+8. On your first run, the setup window for your details should open up as such:
+<div align="left">
+  <a href="https://github.com/vineetmehtaa/MeetingJoiner">
+    <img src="images/8.png" alt="Setup Details">
+  </a>
+</div>
+
+  
 _Method 2:_
-1. Clone the repo or download the zip
+1. Clone the repo or download the zip(You will need python3)
    ```sh
    git clone https://github.com/vineetmehtaa/MeetingJoiner.git
    ```
 2. Open CMD and run
    ```sh
    cd /PATH/TO/MeetingJoiner/
-   "Meeting Joiner.exe"
+   python3 "Meeting Joiner.exe"
    ```
    _Your setup should start right away!_
    
@@ -74,8 +134,9 @@ Once your setup is complete on the first run, it is ready to use!
 
 All you need to do now is to _double-click_ the "Meeting Joiner.exe" when your classes are going on, and it will put you in the class!
 
-This code is currently compatible only for classes PUII - [A | B | D | E | F]
+This application is currently in beta and awaiting testing for all classes!
 
+  
 _For any queries, you can mail me at vineetashishm@cmr.ac.in_
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
