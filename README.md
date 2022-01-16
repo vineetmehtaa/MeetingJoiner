@@ -134,6 +134,7 @@ _Method 1:[ Windows 8 | 10 | 11 ]_
 </p>
 
 _Method 2:_
+<br />
 :one: Clone the repo or download the zip(You will need python3)
    ```sh
    git clone https://github.com/vineetmehtaa/MeetingJoiner.git
