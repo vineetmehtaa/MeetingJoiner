@@ -43,7 +43,7 @@ Here's why you should try this:
 
 _You can follow the steps given below to get your Meeting Joiner ready!_
 
-<details><summary><b><i>Method 1:[ Windows 8 | 10 | 11 ]</i></b></summary>
+<details><summary><b><i>Method 1: [ Windows 8 | 10 | 11 ]</i></b></summary>
 
 <br />
 <p align="left">
