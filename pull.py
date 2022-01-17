@@ -26,3 +26,10 @@ if len(check) == 3 and check[0][-6:-4] == "PU" and validators.url(check[1]) and 
 # sending user to instantiate setup for "details.txt"
 else:
 	setup()
+
+kkc = open("version.txt", "r")
+if kkc.read() != version:
+	print("There is an update!")
+	input("Download the new version from: https://github.com/vineetmehtaa/MeetingJoiner")
+	exit()
+kkc.close()
