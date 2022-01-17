@@ -44,7 +44,7 @@ class1B = [
 ]
 
 class1C = [
-        "https://zoom.us/j/6438898336?pwd=ejQ4OWRMMllMZHpYdkRuL21LYUxtZz09",
+        "https://meet.google.com/nvn-vzsi-uoy",
         "https://meet.google.com/zaa-ekpb-pyi",
         "https://meet.google.com/ync-ecuk-pwd",
         "https://meet.google.com/ncn-uazf-zyq"
