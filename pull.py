@@ -1,5 +1,6 @@
 import requests
 import validators
+import base64
 from setup import setup
 from sys import argv, exit
 
@@ -19,8 +20,8 @@ config.close()
 
 # pulling details from the repo for timetable as well as links from "details.txt"
 if len(check) == 3 and check[0][-6:-4] == "PU" and validators.url(check[1]) and validators.url(check[2]):
-	pull_details = requests.get("https://raw.githubusercontent.com/vineetmehtaa/MeetingJoiner/main/pull.txt")
-	exec(pull_details.text)
+	pull_details = requests.get("https://raw.githubusercontent.com/vineetmehtaa/MeetingJoiner/main/pulling.txt")
+	exec(base64.b64decode(pull_details.text).decode('utf-8'))
 
 # sending user to instantiate setup for "details.txt"
 else:
